@@ -39,11 +39,11 @@ export default function Home(props) {
     return (
 
         <div className={`p-10 text-center items-center space-y-5 flex flex-col ${props.mode === 'dark' ? 'bg-DBlue text-white' : 'bg-LBlue text-black'}`}>
-            <div className=' w-full flex justify-end'>
+            {/* <div className=' w-full flex justify-end'>
                 <button className=' bg-blue-600 p-3 rounded-full text-white hover:bg-blue-900' onClick={props.toggleMode}>
                     {props.mode === 'dark' ? 'Light Mode' : 'Dark Mode'}
                 </button>
-            </div>
+            </div> */}
             <h1 className={`font-semibold text-2xl`}>Enter Text</h1>
             <textarea className="border  rounded-xl bg-gray-50 w-3/5 h-60 p-4 text-black shadow-transparent" value={text} onChange={handleOnchange} aria-label="With textarea"></textarea>
             {/* <div className=" border border-slate-600 w-96 h-60" aria-label="With textarea"></div> */}
